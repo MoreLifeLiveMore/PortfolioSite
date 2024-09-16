@@ -68,7 +68,7 @@ nav {
   transition: 0.3s linear;
 }
 
-.nav-container links a::before {
+.nav-container .links a::before {
   position: absolute;
   content: "";
   bottom: -3px;
@@ -172,14 +172,15 @@ section .main-container {
     font-weight: 600;
 }
 
- .typewriter-text{
+   .typewriter::after{
+  content: "Software Engineer";
     color: black;
     text-shadow: 0 0 10px rosybrown;
     border-right: 5px solid black;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(17) forwards, deleting 2s steps(17) forwards, cursor .4s step-end infinite alternate;
+    animation: typing 2s steps(40) forwards, deleting 2s steps(40) forwards, cursor .4s step-end infinite alternate;
 }
 /* cursor blinking */
 @keyframes cursor{
@@ -190,21 +191,21 @@ section .main-container {
 
 /*typing effect*/
 @keyframes typing{
-    from{
-        width: 0;
-    }
-    to{
-        width: 100%;
-    }
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
 }
 
-@keyframes deleting{
-    from{
-        width: 100%;
-    }
-    to{
-        width: 0;
-    }
+@keyframes deleting {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
 
 .content p{
