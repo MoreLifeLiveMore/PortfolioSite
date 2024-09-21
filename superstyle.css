@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B");
 /* og syle emojis */
 @font-face {
-  font-family: og-emoji;
+  font-family: "og-emoji";
   src: url(/Resources/og-dcm-emoji.ttf);
+}
+
+.og {
+  font-family: og-emoji, sans-serif;
 }
 
 * {
@@ -19,6 +23,7 @@ body {
   height: auto;
   background-color: cornflowerblue;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 nav {
@@ -55,7 +60,7 @@ nav {
   opacity: 0;
 }
 .nav-container .links {
-  pointer-events: none;
+  pointer-events: all;
   font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
 
@@ -84,13 +89,13 @@ nav {
   transition: 0.2s linear;
 }
 
-.nav-container .links a:hover::before {
-  width: 100%;
-}
-
 .nav-container .links a:hover {
   color: blanchedalmond;
   border-bottom: 3px solid black;
+}
+
+.nav-container .links a:hover::before {
+  width: 100%;
 }
 
 .dropdown {
@@ -138,7 +143,7 @@ section .main-container {
 }
 
 .main-container .portrait img {
-  width: 100%;
+  width: 90%;
 }
 
 .main-container .portrait:hover {
@@ -166,56 +171,19 @@ section .main-container {
   font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
 }
 
-.content h1 span {
-  color: black;
-  text-shadow: 0 0 10px rosybrown;
-}
+
 
 .content .typewriter {
   font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
   font-weight: 600;
-}
-
-.typewriter::after {
-  content: "Software Engineer";
   color: black;
   text-shadow: 0 0 10px rosybrown;
-  border-right: 5px solid black;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 2s steps(40) forwards, deleting 2s steps(40) forwards,
-    cursor 0.4s step-end infinite alternate;
-}
-/* cursor blinking */
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
-}
-
-/*typing effect*/
-@keyframes typing {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes deleting {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0;
-  }
+  padding-bottom: 0%;
 }
 
 .content p {
-  font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
-  margin: 10px 0;
+  font-size: clamp(1rem, 0.2rem + 9vw, 1rem);
+  margin: 0;
 }
 
 .social-links i {
@@ -261,4 +229,15 @@ section .main-container {
   background-color: rosybrown;
   font-weight: 700;
   box-shadow: 0 0 40px black;
+}
+
+.download{
+  color: white;
+}
+
+footer {
+  background: blanchedalmond;
+  padding: 15px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
