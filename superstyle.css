@@ -37,6 +37,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: 50px;
 }
 
 .logo {
@@ -137,7 +138,7 @@ section .main-container {
 }
 
 .main-container .portrait {
-  width: 700px;
+  width: 800px;
   height: 100vh;
   overflow: hidden;
 }
