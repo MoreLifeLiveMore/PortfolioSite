@@ -79,6 +79,10 @@ nav {
   transition: 0.3s linear;
 }
 
+.nav-container .links .slink a{
+  color: brown;
+}
+
 .nav-container .links a::before {
   position: absolute;
   content: "";
@@ -138,7 +142,7 @@ section .main-container {
 }
 
 .main-container .portrait {
-  width: 800px;
+  width: 750px;
   height: 100vh;
   overflow: hidden;
 }

@@ -15,11 +15,15 @@
         font-family: "og-emoji";
         src: url(/Resources/og-dcm-emoji.ttf);
       }
+      .og {
+        font-family: og-emoji, sans-serif;
+      }
       body {
         font-family: "Poppins", sans-serif;
         margin: 0;
         padding: 0;
         background-color: cornflowerblue;
+        overflow: hidden;
       }
       /* New In-style CSS for Projects Page*/
       nav {
@@ -94,6 +98,10 @@
         width: 100%;
       }
 
+      .nav-container .links .slink a {
+        color: brown;
+      }
+
       .dropdown {
         z-index: 100;
         position: absolute;
@@ -124,28 +132,30 @@
         margin: auto;
         overflow: hidden;
       }
-      .project {
-        display: flex;
-        align-items: center;
-        background: #fff;
-        margin: 20px 0;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      body .contact-header {
+        font-size: 900%;
+        margin-left: 20%;
+        margin-top: 10%;
       }
-      .project img {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        margin-right: 20px;
+
+      body p {
+        font-size: large;
+        height: 300px;
+        width: 450px;
+        text-align: left;
+        margin-left: 20%;
+        margin-top: -90px;
       }
-      .project .text {
-        max-width: 600px;
+      body p a {
+        text-decoration: none;
+        color: cornsilk;
       }
-      .project .text h2 {
-        margin: 0 0 10px;
-      }
-      .project .text p {
-        margin: 0;
+      footer {
+        background: blanchedalmond;
+        padding: 15px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
       }
     </style>
     <nav>
@@ -157,7 +167,7 @@
           <div class="link"><a href="/index.html">Home</a></div>
           <div class="link"><a href="/Projects.html">Projects</a></div>
           <div class="link"><a href="/Contacts.html">Contact</a></div>
-          <div class="link"><a href="/MyWhy.html">My|Why?</a></div>
+          <div class="slink"><a href="/MyWhy.html">My|Why?</a></div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
       </div>
@@ -174,6 +184,24 @@
   </head>
   <body>
     <h1 class="contact-header">Hello.</h1>
-    <p></p>
+    <p>
+      If you’re looking for a motivated and quick-learning team member who is
+      ready to tackle challenges and make a meaningful impact, I’d love to
+      connect with you. <br /><br />
+      Best regards,
+      <br /><br />Aadon Miller<br />
+      <a href="mailto:aadon.miller@gmail.com" class="email"
+        >aadon.miller@gmail.com</a
+      >
+    </p>
   </body>
+  <footer>
+    <div class="text">
+      <span>
+        Created By
+        <a href="#">Aadon Miller </a><span class="og">✌️</span> &#169; 2024 All
+        Rights Reserved
+      </span>
+    </div>
+  </footer>
 </html>

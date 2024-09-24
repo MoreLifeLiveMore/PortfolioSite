@@ -15,6 +15,9 @@
         font-family: "og-emoji";
         src: url(/Resources/og-dcm-emoji.ttf);
       }
+      .og {
+        font-family: og-emoji, sans-serif;
+      }
       body {
         font-family: "Poppins", sans-serif;
         margin: 0;
@@ -94,6 +97,10 @@
         width: 100%;
       }
 
+      .nav-container .links .slink a {
+        color: brown;
+      }
+
       .dropdown {
         z-index: 100;
         position: absolute;
@@ -147,6 +154,12 @@
       .project .text p {
         margin: 0;
       }
+      footer {
+        background: blanchedalmond;
+        padding: 15px;
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+      }
     </style>
     <nav>
       <div class="nav-container">
@@ -157,7 +170,7 @@
           <div class="link"><a href="/index.html">Home</a></div>
           <div class="link"><a href="/Projects.html">Projects</a></div>
           <div class="link"><a href="/Contacts.html">Contact</a></div>
-          <div class="link"><a href="MyWhy.html">My|Why?</a></div>
+          <div class="slink"><a href="/MyWhy.html">My|Why?</a></div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
       </div>
@@ -205,4 +218,13 @@
       <!-- Add more projects as needed -->
     </div>
   </body>
+  <footer>
+    <div class="text">
+      <span>
+        Created By
+        <a href="#">Aadon Miller </a><span class="og">✌️</span> &#169; 2024 All
+        Rights Reserved
+      </span>
+    </div>
+  </footer>
 </html>
